@@ -1,5 +1,6 @@
 from app import db
 from flask_bcrypt import Bcrypt
+from flask import current_app
 import jwt
 from datetime import datetime, timedelta
 
@@ -79,10 +80,12 @@ class Post(db.Model):
     date_modified = db.Column(
         db.DateTime, default=db.func.current_timestamp(),
         onupdate=db.func.current_timestamp())
+    created_by = db.Column(db.Integer, db.ForeignKey(User.id))
 
-    def __init__(self, name):
+    def __init__(self, name, created_by):
         """initialize with name."""
         self.name = name
+        self.created_by = created_by
 
     def save(self):
         db.session.add(self)
@@ -90,7 +93,7 @@ class Post(db.Model):
 
     @staticmethod
     def get_all():
-        return Post.query.all()
+        return Post.query.filter_by(created_by=user_id)
 
     def delete(self):
         db.session.delete(self)
