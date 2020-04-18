@@ -8,7 +8,7 @@ class User(db.Model):
 
     __tablename__ = 'users'
 
-    #Define the columns of users tables starting with the primary key
+    # Define the columns of users tables starting with the primary key
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(256), nullable=False, unique=True)
     password = db.Column(db.String(256), nullable=False)
@@ -99,4 +99,3 @@ class Post(db.Model):
     def __repr__(self):
         return "<Post: {}>".format(self.name)
 
-        
