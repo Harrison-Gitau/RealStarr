@@ -17,45 +17,83 @@ class RealstarrTestCase(unittest.TestCase):
             #create all tables
             db.create_all()
 
+    def register_user(self, email="user@test.com", password="password"):
+    """ This helper method helps register a test user."""
+    user_data = {
+        'email': email,
+        'password': password
+    }
+    return self.client().post('/auth/register'), data=user_data)
+
+    def login_user(self, email="user@test.com", password="password"):
+        """This helper method helps log in a test user"""
+        user_data = {
+            'email': email,
+            'password': password
+        }
+        return self.client().post('/auth/login', data=user_data)
+
     def test_post_creation(self):
         """Test API can create a post. (POST request)"""
-        res = self.client().post('/posts/', data = self.post)
+        self.register_user()
+        result = self.login_user()
+        access_token = json.loads(result.data.decode())['access_token']
+        res = self.client().post(
+            '/posts/', 
+            headers=dict(Authorization="Bearer " + access_token),
+            data = self.post)
+
         self.assertEqual(res.status_code, 201)
-        res = self.client().get('/posts/')
-        self.assertEqual(res.status_code, 200)
         self.assertIn('Most talented footballer of all times', str(res.data))
 
     def test_api_can_get_all_posts(self):
         """Test API can get all post. (GET request)"""
-        res = self.client().post('/posts/', data=self.post)
-        self.assertEqual(res.status_code, 201)
-        res = self.client().get('/posts/')
+        self.register_user()
+        result = self.login_user()
+        access_token = json.loads(result.data.decode())['access_token']
+        res = self.client().post(
+            '/posts/', 
+            headers=dict(Authorization="Bearer " + access_token),
+            data = self.post)
         self.assertEqual(res.status_code, 200)
         self.assertIn('Most talented footballer of all times', str(res.data))
 
     def test_api_can_get_post_by_id(self):
         """Test API can get a single post using it's id."""
-        rv = self.client().post('/posts/', data=self.post)
+        self.register_user()
+        result = self.login_user()
+        access_token = json.loads(result.data.decode())['access_token']
+        rv = self.client().post(
+            '/posts/',
+            headers=dict(Authorization="Bearer " + access_token),
+            data=self.post)
         self.assertEqual(rv.status_code, 201)
-        result_in_json = json.loads(rv.data.decode('utf-8').replace("'", "\""))
+        result = json.loads(rv.data.decode())
         result = self.client().get(
-            '/posts/{}'.format(result_in_json['id']))
+            '/posts/{}'.format(result['id']))
         self.assertEqual(result.status_code, 200)
         self.assertIn('Most talented footballer of all times', str(result.data))
 
     def test_post_name_can_be_edited(self):
         """Test API can edit name of existing post. (PUT request)"""
+        self.register_user()
+        result = self.login_user()
+        access_token = json.loads(result.data.decode())
         rv = self.client().post(
             '/posts/',
+            headers=dict(Authorization="Bearer " + access_token),
             data={'name': 'world of sports'})
         self.assertEqual(rv.status_code, 201)
         rv = self.client().put(
-            '/posts/1',
+            '/posts/{}'.format(results['id']),
+            headers=dict(Authorization="Bearer " + access_token),
             data = {
                 'name': 'Trending in the world of sports'
             })
         self.assertEqual(rv.status_code, 200)
-        results = self.client().get('/posts/1')
+        results = self.client().get(
+            '/posts/{}'.format(results['id']),
+            headers=dict(Authorization="Bearer " + access_token),
         self.assertIn('Trending in the', str(results.data))
 
     # def test_post_message_can_be_edited(self):
@@ -76,22 +114,23 @@ class RealstarrTestCase(unittest.TestCase):
 
     def test_post_deletion(self):
         """Test API can delete an existing post. (DELETE request)"""
+        self.register_user()
+        result = self.login_user()
+        access_token = json.loads(result.data.decode())['access_token']
+
         rv = self.client().post(
             '/posts/',
+            headers=dict(Authorization="Bearer " + access_token),
             data={'name': 'world of sports'})
         self.assertEqual(rv.status_code, 201)
-        res = self.client().delete('/posts/1')
+        res = self.client().delete(
+            '/posts/{}.format(results['id']),
         self.assertEqual(res.status_code, 200)
         #Test to see whether it exists, should return a 404
-        result = self.client().get('/posts/1')
+        result = self.client().get(
+            '/posts/1',
+            headers=dict(Authorization="Bearer " + access_token))
         self.assertEqual(result.status_code, 404)
-
-    def tearDown(self):
-        """Teardown all initialized variables."""
-        with self.app.app_context():
-            #drop all tables
-            db.session.remove()
-            db.drop_all()
 
 # Make the tests conveniently executable
 if __name__ == '__main__':
