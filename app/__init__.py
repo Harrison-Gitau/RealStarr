@@ -28,6 +28,7 @@ def create_app(config_name):
 
     @app.route('/posts/', methods=['POST', 'GET'])
     def posts():
+
         # get the access token
         auth_header = request.headers.get('Authorization')
         access_token = auth_header.split(" ")[1]
@@ -50,7 +51,8 @@ def create_app(config_name):
                         })
                         return make_response(response), 201
                 else:
-                    #GET
+
+                    # GET all the posts created by a certain user
                     posts = Post.get_all(user_id)
                     results = []
 
@@ -85,6 +87,7 @@ def create_app(config_name):
             if not isinstance(user_id, str):
 
                 # retrieve a post using its id
+                # localhost:5000/posts/<id>
                 post = Post.query.filter_by(id=id).first()
                 if not post:
                     # Raise an HTTPexception error with a 404 not found status code
