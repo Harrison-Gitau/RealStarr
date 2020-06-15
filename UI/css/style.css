@@ -44,6 +44,11 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.lolo {
+  width: 500px;
+}
+/*Co-authored CSS
+==================================================================*/
 .list {
   list-style: none;
   margin: 0px;
@@ -71,7 +76,7 @@ body {
   font-size: 16px;
   font-family: "Inconsolata", monospace;
   font-weight: normal;
-  color: #777777;
+  color: 000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -177,7 +182,7 @@ button:focus {
   width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 3;
+  z-index: 6;
 }
 
 .header_area + section, .header_area + div {
@@ -2357,6 +2362,7 @@ b, sup, sub, u, del {
 
 h1 {
   font-size: 36px;
+  color:black;
 }
 
 h2 {
