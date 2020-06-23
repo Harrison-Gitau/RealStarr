@@ -46,10 +46,13 @@ Table of Content:
 /*----------------------------------------------------*/
 .lolo {
   max-width: 500px;
+  /* height: 500px; */
 }
 .sections {
   background-color: #f7f6f2;
   padding: 25px;
+  margin-left: 500px;
+  margin-bottom: -250px;
 }
 .ronaldihno {
   margin: 20px;
