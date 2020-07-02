@@ -83,11 +83,13 @@ a:hover, a:focus {
   margin: 0px;
 }
 
+/* Includes style for text within body element */
 body {
   line-height: 26px;
   font-size: 16px;
   font-family: "Inconsolata", monospace;
   font-weight: normal;
+  /* background-color: red; */
   color: 000000;
 }
 
@@ -499,6 +501,10 @@ button:focus {
 
 .blog_text p {
   margin-bottom: 35px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  color: #000000;
+
 }
 
 .blog_banner {
@@ -2382,11 +2388,14 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 27px;
+  text-align: center;
+  padding: 10px;
 }
 
 h4 {
   font-size: 18px;
+  color: rgb(250, 111, 90);
 }
 
 h5 {
@@ -3699,7 +3708,7 @@ h6 {
 }
 
 .blog_style1 .blog_text .blog_text_inner p {
-  color: #777777;
+  color: #000000;
   margin-bottom: 22px;
 }
 
