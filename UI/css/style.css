@@ -2390,7 +2390,8 @@ h2 {
 h3 {
   font-size: 27px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  background-color: rgba(11, 86, 224);
 }
 
 h4 {
