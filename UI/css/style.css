@@ -58,6 +58,11 @@ Table of Content:
   margin: 20px;
   padding-top: 40px;
 }
+/* p {
+  font-size: 250px;
+  font-weight: 800;
+  color: red;
+} */
 
 /*Co-authored CSS
 ==================================================================*/
@@ -501,8 +506,9 @@ button:focus {
 
 .blog_text p {
   margin-bottom: 35px;
-  font-family: "Inconsolata", monospace;
-  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
   color: #000000;
 
 }
@@ -2395,6 +2401,7 @@ h3 {
   text-align: center;
   padding: 15px;
   background-color: rgba(11, 86, 224);
+
 }
 
 h4 {
