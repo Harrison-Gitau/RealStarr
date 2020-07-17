@@ -53,6 +53,8 @@ Table of Content:
   text-align: center;
   background-color: rgba(11, 86, 224);
   width: auto;
+  background-image: url("../img/download.jpeg");
+  color: white;
 }
 .lolo {
   max-width: 500px;
