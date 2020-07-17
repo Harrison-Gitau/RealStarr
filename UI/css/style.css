@@ -48,13 +48,17 @@ Table of Content:
   position: relative;
   top: 20px;
   bottom: 20px;
-  /* left: 0px; */
-  padding: 15px;
+  padding: 20px;
   text-align: center;
-  background-color: rgba(11, 86, 224);
+  /* background-color: rgba(11, 86, 224); */
   width: auto;
   background-image: url("../img/download.jpeg");
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(1.15);
+  margin-bottom: 100px;
 }
 .lolo {
   max-width: 500px;
@@ -131,7 +135,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
 
@@ -2423,7 +2427,7 @@ b, sup, sub, u, del {
 
 h1 {
   font-size: 36px;
-  color:black;
+  /* color:black; */
 }
 
 h2 {
