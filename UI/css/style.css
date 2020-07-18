@@ -44,15 +44,17 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-.boxshadow_part .container {
+.boxshadow_part_sports .container {
   position: relative;
   top: 20px;
   bottom: 20px;
   padding: 20px;
   text-align: center;
-  /* background-color: rgba(11, 86, 224); */
   width: auto;
-  background-image: url("../img/download.jpeg");
+  background-image: url("../img/sports.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
@@ -60,6 +62,79 @@ Table of Content:
   transform: scale(1.15);
   margin-bottom: 100px;
 }
+.boxshadow_part_motivation .container {
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  background-image: url("../img/motivation.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(1.15);
+  margin-bottom: 100px;
+}
+.boxshadow_part_trends .container {
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  background-image: url("../img/trends.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(1.15);
+  margin-bottom: 100px;
+}
+.boxshadow_part_politics .container {
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  background-image: url("../img/politics.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(1.15);
+  margin-bottom: 100px;
+}
+.boxshadow_part_lyrics .container {
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  background-image: url("../img/lyrics.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  transform: scale(1.15);
+  margin-bottom: 100px;
+}
+
 .lolo {
   max-width: 500px;
   /* height: 500px; */
