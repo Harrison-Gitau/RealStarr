@@ -139,7 +139,6 @@ Table of Content:
   max-width: 500px;
   position: relative;
   bottom: 100px;
-
 }
 /* @media(max-width: 992px){
   .lolo {
@@ -152,6 +151,8 @@ Table of Content:
   padding: 25px;
   margin-left: 500px;
   margin-bottom: -250px;
+  display: flex;
+  flex-direction: column;
 }
 .sections .category h4:hover {
   color: #090900;
@@ -224,7 +225,6 @@ body {
   font-size: 16px;
   font-family: "Inconsolata", monospace;
   font-weight: normal;
-  /* background-color: red; */
   color: 000000;
 }
 
