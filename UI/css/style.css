@@ -166,12 +166,12 @@ Table of Content:
   font-family: 'Times New Roman', Times, serif;
   line-height: 25px;
 }
-.sections p a {
+.sections h3 a {
   color: #000000;
   font-style: italic;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
-.sections p a:hover {
+.sections h3 a:hover {
   text-decoration: underline;
 }
 .ronaldihno {
@@ -2523,7 +2523,6 @@ b, sup, sub, u, del {
 
 h1 {
   font-size: 36px;
-  /* color:black; */
 }
 
 h2 {
@@ -2531,7 +2530,7 @@ h2 {
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 24px;
 
 }
 
