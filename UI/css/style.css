@@ -153,6 +153,8 @@ Table of Content:
   margin-bottom: -250px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
 }
 .sections .category h4:hover {
   color: #090900;
