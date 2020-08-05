@@ -44,6 +44,9 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+/* Start co-authored Css
+=====================================================================*/
 .boxshadow_part_sports .container {
   position: relative;
   top: 20px;
@@ -178,26 +181,27 @@ Table of Content:
   margin: 20px;
   padding-top: 40px;
 }
-@media (min-width: 992px) { /* width more than or equal to 992px(Desktop width size) */
-  .sections {
 
-  }
+/* to get back here for responsiveness */
+
+/* @media (min-width: 992px) { /* width more than or equal to 992px(Desktop width size) */
+  /* .sections { */
+
+  /* }
 @media (max-width: 992px) { /* width is less than or equal to 992px(Medium mobile devices) */
-  .sections {
+  /* .sections {
     padding: 0;
-    margin: auto;
+    margin: auto; */
 
-  }
-}
-
-}
+  /* }  */ 
+/* } */
 /* p {
   font-size: 250px;
   font-weight: 800;
   color: red;
 } */
 
-/*Co-authored CSS
+/* End Co-authored CSS
 ==================================================================*/
 .list {
   list-style: none;
