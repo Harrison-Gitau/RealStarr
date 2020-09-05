@@ -49,9 +49,7 @@ Table of Content:
 =====================================================================*/
 .boxshadow_part_sports .container {
   position: relative;
-  top: 20px;
-  bottom: 20px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   width: auto;
   background-image: url("../img/sports.jpg");
@@ -63,13 +61,10 @@ Table of Content:
   font-style: italic;
   font-weight: 800;
   transform: scale(1.15);
-  margin-bottom: 100px;
 }
 .boxshadow_part_motivation .container {
   position: relative;
-  top: 20px;
-  bottom: 20px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   width: auto;
   background-image: url("../img/motivation.jpg");
@@ -81,13 +76,10 @@ Table of Content:
   font-style: italic;
   font-weight: 800;
   transform: scale(1.15);
-  margin-bottom: 100px;
 }
 .boxshadow_part_trends .container {
   position: relative;
-  top: 20px;
-  bottom: 20px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   width: auto;
   background-image: url("../img/fashion.jpg");
@@ -103,9 +95,9 @@ Table of Content:
 }
 .boxshadow_part_politics .container {
   position: relative;
-  top: 20px;
-  bottom: 20px;
-  padding: 20px;
+  /* top: 20px;
+  bottom: 20px; */
+  padding: 20px 0;
   text-align: center;
   width: auto;
   background-image: url("../img/politics.jpg");
@@ -117,13 +109,10 @@ Table of Content:
   font-style: italic;
   font-weight: 800;
   transform: scale(1.15);
-  margin-bottom: 100px;
 }
 .boxshadow_part_lyrics .container {
   position: relative;
-  top: 20px;
-  bottom: 20px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   width: auto;
   background-image: url("../img/lyrics.jpg");
@@ -135,7 +124,6 @@ Table of Content:
   font-style: italic;
   font-weight: 800;
   transform: scale(1.15);
-  margin-bottom: 100px;
 }
 
 .sections .img-pic {
@@ -151,7 +139,7 @@ Table of Content:
 } */
 .sections {
   background-color: #f7f6f2;
-  padding: 5px;
+  padding: 10px 0;
   /* margin-left: 500px; */
   /* margin-bottom: -250px; */
   /* display: flex; */
@@ -168,8 +156,6 @@ Table of Content:
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: 25px;
-  width: 500px;
-  margin-top:0;
 }
 .sections h3 a {
   color: #000000;
