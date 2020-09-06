@@ -59,7 +59,7 @@ Table of Content:
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   transform: scale(1.15);
 }
 .boxshadow_part_motivation .container {
@@ -74,7 +74,7 @@ Table of Content:
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   transform: scale(1.15);
 }
 .boxshadow_part_trends .container {
@@ -89,14 +89,12 @@ Table of Content:
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   transform: scale(1.15);
   margin-bottom: 100px;
 }
 .boxshadow_part_politics .container {
   position: relative;
-  /* top: 20px;
-  bottom: 20px; */
   padding: 20px 0;
   text-align: center;
   width: auto;
@@ -107,7 +105,7 @@ Table of Content:
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   transform: scale(1.15);
 }
 .boxshadow_part_lyrics .container {
@@ -122,30 +120,17 @@ Table of Content:
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   transform: scale(1.15);
 }
 
 .sections .img-pic {
   width: 300px;
-  /* position: relative;
-  bottom: 100px; */
 }
-/* @media(max-width: 992px){
-  .lolo {
-    max-width: 100px;
-    height: auto;
-  }
-} */
+
 .sections {
   background-color: #f7f6f2;
   padding: 10px 0;
-  /* margin-left: 500px; */
-  /* margin-bottom: -250px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
 }
 .sections .category h4:hover {
   color: #090900;
@@ -160,7 +145,6 @@ Table of Content:
 .sections h3 a {
   color: #000000;
   font-style: italic;
-  /* font-weight: 800; */
 }
 .sections h3 a:hover {
   text-decoration: underline;
@@ -175,25 +159,6 @@ Table of Content:
   margin: 20px;
   padding-top: 40px;
 }
-
-/* to get back here for responsiveness */
-
-/* @media (min-width: 992px) { /* width more than or equal to 992px(Desktop width size) */
-  /* .sections { */
-
-  /* }
-@media (max-width: 992px) { /* width is less than or equal to 992px(Medium mobile devices) */
-  /* .sections {
-    padding: 0;
-    margin: auto; */
-
-  /* }  */ 
-/* } */
-/* p {
-  font-size: 250px;
-  font-weight: 800;
-  color: red;
-} */
 
 /* End Co-authored CSS
 ==================================================================*/
