@@ -325,11 +325,11 @@ button:focus {
   color: #6f6fff;
 }
 
-.logo_part {
+/* .logo_part {
   overflow: hidden;
   padding: 27.5px 0px;
   text-align: center;
-}
+} */
 
 .header_social li {
   display: inline-block;
