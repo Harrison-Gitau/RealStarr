@@ -141,6 +141,7 @@ Table of Content:
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   line-height: 25px;
+  text-align: left;
 }
 .sections h3 a {
   color: #000000;
