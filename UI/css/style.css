@@ -47,11 +47,12 @@ Table of Content:
 
 /* Start co-authored Css
 =====================================================================*/
-.boxshadow_part_sports .container {
+.boxshadow_part_sports {
   position: relative;
   padding: 20px 0;
   text-align: center;
-  width: auto;
+  width: 100%;
+  height: auto;
   background-image: url("../img/sports.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +63,7 @@ Table of Content:
   font-weight: 700;
   transform: scale(1.15);
 }
-.boxshadow_part_motivation .container {
+.boxshadow_part_motivation {
   position: relative;
   padding: 20px 0;
   text-align: center;
@@ -77,7 +78,7 @@ Table of Content:
   font-weight: 700;
   transform: scale(1.15);
 }
-.boxshadow_part_trends .container {
+.boxshadow_part_trends {
   position: relative;
   padding: 20px 0;
   text-align: center;
@@ -93,7 +94,7 @@ Table of Content:
   transform: scale(1.15);
   margin-bottom: 100px;
 }
-.boxshadow_part_politics .container {
+.boxshadow_part_politics {
   position: relative;
   padding: 20px 0;
   text-align: center;
@@ -108,7 +109,7 @@ Table of Content:
   font-weight: 700;
   transform: scale(1.15);
 }
-.boxshadow_part_lyrics .container {
+.boxshadow_part_lyrics {
   position: relative;
   padding: 20px 0;
   text-align: center;
@@ -131,6 +132,8 @@ Table of Content:
 .sections {
   background-color: #f7f6f2;
   padding: 10px 0;
+  width: 100%;
+  height: auto;
 }
 .sections .category h4:hover {
   color: #090900;
