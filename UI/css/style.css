@@ -47,6 +47,12 @@ Table of Content:
 
 /* Start co-authored Css
 =====================================================================*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .boxshadow_part_sports {
   position: relative;
   padding: 20px 0;
@@ -127,6 +133,8 @@ Table of Content:
 
 .sections .img-pic {
   width: 300px;
+  float: left;
+  margin-right: 20px;
 }
 
 .sections {
@@ -195,6 +203,8 @@ body {
   font-family: "Inconsolata", monospace;
   font-weight: normal;
   color: 000000;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -328,12 +338,6 @@ button:focus {
   background: transparent;
   color: #6f6fff;
 }
-
-/* .logo_part {
-  overflow: hidden;
-  padding: 27.5px 0px;
-  text-align: center;
-} */
 
 .header_social li {
   display: inline-block;
