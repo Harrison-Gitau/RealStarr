@@ -8,6 +8,7 @@ __pycache__/
 
 # Text editor
 .vscode/
+.vs/
 
 # Distribution / packaging
 .Python
