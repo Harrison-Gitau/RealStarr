@@ -50,9 +50,11 @@ Table of Content:
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 .boxshadow_part_sports {
   position: relative;
   padding: 20px 0;
@@ -69,6 +71,7 @@ html {
   font-weight: 700;
   transform: scale(1.15);
 }
+
 .boxshadow_part_motivation {
   position: relative;
   padding: 20px 0;
@@ -84,6 +87,7 @@ html {
   font-weight: 700;
   transform: scale(1.15);
 }
+
 .boxshadow_part_trends {
   position: relative;
   padding: 20px 0;
@@ -100,6 +104,7 @@ html {
   transform: scale(1.15);
   margin-bottom: 100px;
 }
+
 .boxshadow_part_politics {
   position: relative;
   padding: 20px 0;
@@ -114,6 +119,7 @@ html {
   font-style: italic;
   font-weight: 700;
   transform: scale(1.15);
+
 }
 .boxshadow_part_lyrics {
   position: relative;
@@ -202,7 +208,7 @@ body {
   font-size: 16px;
   font-family: "Inconsolata", monospace;
   font-weight: normal;
-  color: 000000;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -2030,7 +2036,7 @@ button:focus {
 .contact_info .info_item h6 {
   font-size: 16px;
   line-height: 24px;
-  color: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
   margin-bottom: 0px;
   color: #000;
