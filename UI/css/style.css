@@ -59,7 +59,7 @@ html {
   position: relative;
   padding: 20px 0;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-image: url("../img/sports.jpg");
   background-position: center;
@@ -70,6 +70,7 @@ html {
   font-style: italic;
   font-weight: 700;
   transform: scale(1.15);
+  /* display: inline-block; */
 }
 
 .boxshadow_part_motivation {
@@ -125,7 +126,7 @@ html {
   position: relative;
   padding: 20px 0;
   text-align: center;
-  width: auto;
+  width: 100vw;
   background-image: url("../img/lyrics.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +147,7 @@ html {
 .sections {
   background-color: #f7f6f2;
   padding: 10px 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
   border-bottom: 1px solid#e9e9e9;
 }
@@ -168,12 +169,6 @@ html {
 .sections h3 a:hover {
   text-decoration: underline;
 }
-/* .sections .br {
-  width: 100%;
-  height: 1px;
-  background: #e9e9e9;
-  margin: 30px 0px;
-} */
 .ronaldihno {
   margin: 20px;
   padding-top: 40px;
@@ -212,6 +207,7 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
